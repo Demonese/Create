@@ -228,9 +228,9 @@ public class MechanicalPressTileEntity extends BasinOperatingTileEntity {
 		pressedItems.clear();
 		applyBasinRecipe();
 		Optional<BasinTileEntity> basin = getBasin();
-		SmartInventory inputs = basin.get()
-			.getInputInventory();
 		if (basin.isPresent()) {
+			SmartInventory inputs = basin.get()
+				.getInputInventory();
 			for (int slot = 0; slot < inputs.getSlots(); slot++) {
 				ItemStack stackInSlot = inputs.getItem(slot);
 				if (stackInSlot.isEmpty())
@@ -362,7 +362,7 @@ public class MechanicalPressTileEntity extends BasinOperatingTileEntity {
 
 	@Override
 	protected <C extends IInventory> boolean matchStaticFilters(IRecipe<C> recipe) {
-		return (recipe instanceof ICraftingRecipe && canCompress(recipe))
+		return (recipe instanceof ICraftingRecipe && canCompress(recipe) && !AllRecipeTypes.isManualRecipe(recipe))
 			|| recipe.getType() == AllRecipeTypes.COMPACTING.getType();
 	}
 
