@@ -850,7 +850,7 @@
 	"advancement.create.train_roadkill.desc": "用你的列车创死一名敌人§7\n（隐藏进度）",
 	"advancement.create.red_signal": "老司机",
 	"advancement.create.red_signal.desc": "驾驶列车闯红灯§7\n（隐藏进度）",
-	"advancement.create.train_crash": "劣质服务",
+	"advancement.create.train_crash": "我泡面洒了!",
 	"advancement.create.train_crash.desc": "目睹自己乘坐的列车相撞§7\n（隐藏进度）",
 	"advancement.create.train_crash_backwards": "钩 响 车 不 见",
 	"advancement.create.train_crash_backwards.desc": "在倒车时创上另一辆列车",
